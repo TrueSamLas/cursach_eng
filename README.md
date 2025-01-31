@@ -38,6 +38,13 @@ yarn dev
 bun run dev
 ```
 
+Stop the development server:
+
+```bash
+# npm
+npm run stop
+```
+
 ## Production
 
 Build the application for production:
