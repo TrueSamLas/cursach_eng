@@ -69,6 +69,12 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
 header {
   background: #FFD7BB;
   padding: 10px;
@@ -97,6 +103,7 @@ header {
 	color: #fff;
 	text-decoration: none;
 	padding-top: 17px;
+	transition: background-color 0.3s ease;
 }
 .signin {
 	border-radius: 20px;
@@ -109,6 +116,7 @@ header {
 	color: #fff;
 	text-decoration: none;
 	padding-top: 17px;
+	transition: background-color 0.3s ease;
 }
 .signin:hover, .signup:hover{
 	background: #C66900;

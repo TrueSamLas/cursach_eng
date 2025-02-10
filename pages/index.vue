@@ -124,6 +124,7 @@
 		height: 65px;
 		text-align: center;
 		cursor: pointer;
+		transition: background-color 0.3s ease;
 }
 	.lessons {
 		border-radius: 20px;
@@ -136,6 +137,7 @@
 		color: #fff;
 		padding-top: 17px;
 		cursor: pointer;
+		transition: background-color 0.3s ease;
 	}
 	.lessons:hover, .btn-access:hover {
 		background: #C66900;

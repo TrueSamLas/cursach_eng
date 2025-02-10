@@ -29,7 +29,7 @@
 				})
 
 				if (error) return alert(error)
-				navigateTo('/')
+				navigateTo('/', { replace: true })
 			}
 		} 
 	}
@@ -37,9 +37,9 @@
 
 <style scoped>
 .form-container {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
+  max-width: 800px;
+  margin: 160px auto;
+  padding: 80px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   background-color: #ffffff;
@@ -48,7 +48,7 @@
 
 .form-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
@@ -56,33 +56,33 @@
 
 .form-input {
   width: 100%;
-  padding: 12px;
+  padding: 18px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 20px;
   transition: border-color 0.3s ease;
 }
 
 .form-input:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #FF8800;
+  box-shadow: 0 0 5px rgba(255, 145, 0, 0.5);
 }
 
 .form-button {
   width: 100%;
-  padding: 12px;
-  background-color: #007bff;
+  padding: 25px;
+  background-color: #FF8800;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 20px;
+  font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .form-button:hover {
-  background-color: #0056b3;
+  background-color: #C66900;
 }
 </style>

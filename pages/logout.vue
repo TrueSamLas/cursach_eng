@@ -15,7 +15,7 @@
 			async logout() {
 				const { error } = await this.supabase.auth.signOut()
 
-				navigateTo('/login')
+				navigateTo('/login', { replace: true })
 			}
 		},
 		mounted() {
