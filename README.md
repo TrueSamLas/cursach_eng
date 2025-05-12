@@ -1,82 +1,23 @@
-# Nuxt Minimal Starter
+# AlphaBet
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Установка
 
-## Setup
-
-Make sure to install dependencies:
+- Создать файл `.env` используя шаблон `.env-sample`;
+- Значение для `SUPABASE_KEY` - `anon_key` из вывода команды: `npx supabase start --ignore-health-check`;
+- Установить зависимости:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Запуск
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-Stop the development server:
+Остановка:
 
 ```bash
-# npm
 npm run stop
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

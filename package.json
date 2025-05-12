@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "npx supabase start --ignore-health-check && nuxt dev",
-    "stop": "npx supabase stop",
+    "stop": "npx supabase stop --all",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
