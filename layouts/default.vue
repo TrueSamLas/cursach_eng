@@ -4,11 +4,12 @@
 			<img src="/static/logo.png" alt="">
 			<nav>
 				<nuxt-link to="/" class="header-link">Главная</nuxt-link>
-				<nuxt-link to="/lessons" class="header-link">Задания</nuxt-link>
+				<nuxt-link to="/demo" class="header-link">Демо</nuxt-link>
 				<nuxt-link to="/books" class="header-link">Книги на английском</nuxt-link>
 			</nav>
 			<div class="signup-in" v-if="isLoggedIn">
-				<nuxt-link to="/logout" class="signup">Выход</nuxt-link>
+				<nuxt-link to="/lessons" class="signup">Мои уроки</nuxt-link>
+				<nuxt-link to="/logout" class="signin">Выход</nuxt-link>
 			</div>
 			<div class="signup-in" v-else>
 				<nuxt-link to="/register" class="signup">Регистрация</nuxt-link>
@@ -23,9 +24,9 @@
 			<div class="info_footer">
 				<nav>
 					<ul>
-						<li>Главная</li>
-						<li>Задания</li>
-						<li>Книги на английском</li>
+						<li><nuxt-link to="/" class="footer-link">Главная</nuxt-link></li>
+						<li><nuxt-link to="/demo" class="footer-link">Демо</nuxt-link></li>
+						<li><nuxt-link to="/books" class="footer-link">Книги на английском</nuxt-link></li>
 					</ul>
 				</nav>
 				<div class="social_medias">
@@ -137,6 +138,11 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-link{
+	color: white;
+	text-decoration: none;
 }
 footer span{
 	font-weight: 400;

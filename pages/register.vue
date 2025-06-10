@@ -3,6 +3,7 @@
 	  <h1 class="form-title">Регистрация</h1>
 	  <input type="email" v-model="email" placeholder="Email" class="form-input" />
 	  <input type="password" v-model="password" placeholder="Пароль" class="form-input" />
+    <input type="password" v-model="passwordRepeat" placeholder="Повторите пароль" class="form-input" />
 	  <button type="button" @click="register" class="form-button">Зарегистрироваться</button>
 	</div>
   </template>
@@ -10,6 +11,10 @@
 <script>
 	export default {
 		setup() {
+      definePageMeta({
+				middleware: ['guest-only'],
+			})
+      
 			const supabase = useSupabaseClient()
 			return {
 				supabase,
@@ -19,10 +24,14 @@
 			return {
 				email: "",
 				password: "",
+        passwordRepeat: "",
 			}
 		},
 		methods: {
 			async register() {
+        if( this.password != this.passwordRepeat )
+          return alert('Пароли должны совпадать!');
+
 				const { data, error } = await this.supabase.auth.signUp({
 					email: this.email,
 					password: this.password,

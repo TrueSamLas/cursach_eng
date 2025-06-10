@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+html{
+	font-family: Arial, Helvetica, sans-serif;
+}

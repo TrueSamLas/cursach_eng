@@ -20,7 +20,7 @@
 	</div>	
 </template>
 
-<style>
+<style scoped>
 	.caption{
 		text-align: center;
 		padding: 50px;

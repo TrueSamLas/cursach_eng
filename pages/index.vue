@@ -6,7 +6,7 @@
 			для запоминания слов и выражений</span>
 		</div>
 		<div class="banner_btns">
-			<nuxt-link to="/lessons" class="lessons">Попробовать</nuxt-link>
+			<nuxt-link to="/demo" class="lessons">Попробовать</nuxt-link>
 			<div class="btn-access">Приобрести доступ</div>
 		</div>
 	</div>
@@ -39,15 +39,6 @@
 	},
   };
   </script>
-  
-  <style>
-	*{
-			padding: 0;
-			box-sizing: border-box;
-			margin: 0;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-  </style>
 
   <style scoped>
 	.tiles{

@@ -10,6 +10,10 @@
 <script>
 	export default {
 		setup() {
+      definePageMeta({
+				middleware: ['guest-only'],
+			})
+
 			const supabase = useSupabaseClient()
 			return {
 				supabase,

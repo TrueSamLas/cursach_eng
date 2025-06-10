@@ -1,8 +1,12 @@
 <template>
-	<NuxtLoadingIndicator />
+	<UApp>
+		<NuxtPwaManifest />
+		
+		<NuxtLoadingIndicator />
 
-	<NuxtLayout>
-		<NuxtPage />
-	</NuxtLayout>
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</UApp>
 </template>
 
