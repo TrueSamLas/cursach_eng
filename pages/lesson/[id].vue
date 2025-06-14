@@ -197,6 +197,7 @@
 					size="xl"
 					color="neutral"
 					variant="outline"
+					:disabled="result.is_finished"
 					@click="skipTask()">
 					<span>Пропустить</span>
 				</UButton>
@@ -387,6 +388,9 @@
 	}
 
 	const skipTask = () => {
+		if( result.value.is_finished )
+			return;
+
 		if( confirm('Вы уверены что хотите пропустить текущее задание?') )
 			nextTask();
 	}

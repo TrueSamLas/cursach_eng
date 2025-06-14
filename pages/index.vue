@@ -12,7 +12,6 @@
 	</div>
 
 	<div class="info_block">
-		<h3>Что входит в Словарь?</h3>
 		<div class="tiles">
 			<div class="tile" style="background-image: url(/static/info1.png);">
 				<h2>Тренировка слов</h2>
@@ -42,14 +41,16 @@
 
   <style scoped>
 	.tiles{
+		padding: 100px 0;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		gap: 136px;
-		padding-bottom: 20px;
+		gap: 100px;
 	}
 	.tile{
 		width: 450px;
 		height: 450px;
+		aspect-ratio: 1/1;
 		box-shadow: inset 0 450px 0 0 rgba(0, 0, 0, 0.15), inset 0 -450px 0 0 rgba(0, 0, 0, 0.15);
 		border-radius: 30px;
 		background-repeat: no-repeat;
@@ -84,16 +85,18 @@
 
 	.banner {
 		background-image: url(/static/banner.png);
-		height: 380px;
+		min-height: 380px;
 		box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.3);
 		display: flex;
-		padding: 0 70px;
+		flex-wrap: wrap;
+		padding: 30px;
 		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
 	}
 	.banner_text {
 		font-weight: 400;
 		font-size: 30px;
-		flex: 0 1 100%;
 	}
 	h1{
 		font-weight: 400;
@@ -101,6 +104,8 @@
 	}
 	.banner_btns{
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		align-items: center;
 		gap: 13px;
 	}

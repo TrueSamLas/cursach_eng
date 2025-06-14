@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
 		head: {
 			title: 'AlphaBet',
-			viewport: 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
+			viewport: 'width=device-width, height=device-height, initial-scale=1.0',
 			meta: [
 				{ name: 'theme-color', content: '#ff8800' },
 			],
@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 				{ rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
 				{ rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
 				{ rel: 'icon', href: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-        { rel: 'icon', href: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        		{ rel: 'icon', href: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
 			],
 		},
 	},
@@ -70,11 +70,11 @@ export default defineNuxtConfig({
 		},
 		workbox: {
 			navigateFallback: null,
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      		globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
 		},
-    injectManifest: {
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-    },
+		injectManifest: {
+			globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+		},
 		// devOptions: {
 		// 	enabled: true,
 		// 	suppressWarnings: true,

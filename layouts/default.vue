@@ -63,17 +63,9 @@
 </script>
 
 <style scoped>
-*{
-	padding: 0;
-	box-sizing: border-box;
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
 .layout {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  height: 100svh;
+  overflow-x: hidden;
 }
 
 header {
@@ -81,6 +73,8 @@ header {
   padding: 10px;
   text-align: center;
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -91,22 +85,12 @@ header {
 }
 .signup-in {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 27px;
 }
-.signup {
-	border-radius: 20px;
-	width: 300px;
-	height: 65px;
-	background: #FF8800;
-	font-weight: 400;
-	font-size: 24px;
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-	padding-top: 17px;
-	transition: background-color 0.3s ease;
-}
-.signin {
+.signup, .signin {
 	border-radius: 20px;
 	width: 300px;
 	height: 65px;
@@ -124,7 +108,10 @@ header {
 }
 header nav{
 	display: flex;
-	gap: 96px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 	font-weight: 500;
 	font-size: 24px;
 }
@@ -135,9 +122,11 @@ footer {
   height: 500px;
   color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
+  gap: 20px;
 }
 
 .footer-link{
@@ -150,7 +139,10 @@ footer span{
 }
 .info_footer {
 	display: flex;
-	gap: 898px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
 }
 .info_footer nav ul {
 	list-style-type: none;
@@ -162,7 +154,10 @@ footer span{
 }
 .social_medias{
 	display: flex;
-	gap: 83px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
 }
 .social_medias .media {
 	cursor: pointer;
